@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Old+Standard+TT:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&family=Old+Standard+TT:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .divs{
+            width: 100%;
+            height: 650px;
+            box-sizing: border-box;
+        }
+
+        #div1{
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+            width: 5%;
+            height: 650px;
+            float: right;   
+        }
+
+        #div2{
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+            width: 25%;
+            height: 650px;
+            overflow: scroll;
+            overflow-x: hidden;
+            background-color: aliceblue;
+            /* background-color: rgba(255, 255, 255, 0); */
+            padding-left: 30px;
+            float: right;
+            
+            /*스크롤바 내려도 사진과 리스트가 따라감*/
+            position: fixed;
+            top: 0px;
+            left: 5%;
+            bottom: 0px;
+        }
+        
+    
+        #div3{
+            border: 1px solid black;
+            box-sizing: border-box;
+            width: 65%;
+            height: 5200px;
+            float: right;
+        }
+
+        #div4{
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+            width: 5%;
+            height: 5200px;
+            float: right;
+        }
+        
+        #name {
+            font-family: 'Old Standard TT', serif;
+            margin: 60px;
+            font-size: 20px;
+        }
+
+        #job {
+            font-family: 'Roboto', sans-serif;
+            margin: 83px;
+            font-size: 13px;
+            font-weight: bold;
+            color: rgb(169, 169, 248);
+        }
+
+       
+        
+        #category-list>li{
+            list-style: none;
+            font-size: small;
+            padding-left: 45px;
+            line-height: 13px;
+        }
+
+        a{
+            text-decoration-line: none;
+            text-decoration: none;
+            color: black;
+        }
+
+        #category-list>li:hover{
+            transform: scale(1.2,1.2);
+        }
+
+        .div3>div{
+            border: 1px solid black;
+            box-sizing: border-box;
+            height: 650px;
+            /* color: white; */
+        }
+      
+        .container {
+            width: 120px; 
+            height: 120px;
+        }
+
+        .go {
+            transform: translate(0px, 110px);
+            transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 1s;
+        }
+
+        .hello  {
+            font-size: 40px; 
+            margin-left: 100px;
+            font-family: 'Black Han Sans', sans-serif;
+        }
+
+        #cursor {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="divs">
+        <div id="div1"></div>
+        <div id="div2">
+            <img src="image01.jpg" style="width: 150px; height: 150px; margin: 50px; border-radius: 70%; margin-bottom: 0px;">
+        
+            <!-- <br clear="both"> -->
+            <br><br>
+            <span id="name">AREUM LEE</span>
+            <br>
+            <span id="job">DEVELOPER</span>
+            <br><br>
+            
+            <div class="category">
+                <ul id="category-list">
+                    <li><a href="#div3-1">&nbsp;&nbsp;&nbsp;HOME</a></li>
+                    <br>
+                    <li><a href="#div3-2">&nbsp;&nbsp;&nbsp;ABOUT</a></li>
+                    <br>
+                    <li><a href="#div3-3">TECK SKILLS</a></li>
+                    <br>
+                    <li><a href="#div3-4">&nbsp;PROJECT</a></li>
+                    <br>
+                    <li><a href="#div3-5">EXPERIENCE</a></li>
+                    <br>
+                    <li><a href="#div3-6">EDUCATION</a></li>
+                    <br>
+                    <li><a href="#div3-7">&nbsp;&nbsp;&nbsp;&nbsp;BLOG</a></li>
+                    <br>
+                    <li><a href="#div3-8">&nbsp;CONNACT</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="div3" class="div3">
+            <div id="div3-1" style="margin: 30px;">
+                HOME으로 이동
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <span class="hello">
+                    <span class="hello">안녕하세요. 반갑습니다!</span>
+                    <img src="사본 -컴퓨터와마우스이지미.png" class="container" onclick="move()">
+                    <script>
+                        function move() {
+                            document.querySelector(".container").classList.add("go");
+                        }
+                        </script>
+                        <br><br> 
+                        <span class="hello">소통하는 개발자 이아름입니다.</span>
+                        <img src="마우스커서이미지.jpg" id="cursor">
+                </span>
+
+                
+               
+                   
+
+            </div>
+            <div id="div3-2">ABOUT으로 이동</div>
+            <div id="div3-3">TECK SILLS로 이동</div>
+            <div id="div3-4">PROJECT로 이동</div>
+            <div id="div3-5">EXPERIENCE로 이동</div>
+            <div id="div3-6">EDUCATION으로 이동</div>
+            <div id="div3-7">BLOG로 이동</div>
+            <div id="div3-8">CONNACT로 이동</div>
+            <!-- div 안에 div박스가 8개 있어야 하지 않을까
+            https://claire-design.tistory.com/entry/%EB%8F%99%EC%9D%BC-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%97%90%EC%84%9C-%ED%81%B4%EB%A6%AD%EC%8B%9C-%EC%A0%95%ED%95%B4%EC%A7%84-%EC%9C%84%EC%B9%98%EB%A1%9C-%EC%9D%B4%EB%8F%99%ED%95%98%EA%B8%B0 -->
+        </div>
+        <div id="div4">
+           나는야div
+        </div>
+    </div>
+</body>
+</html>
