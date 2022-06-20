@@ -54,7 +54,7 @@
             border-top: none;
             border-left: none;
             border-right: none;
-            background-color: aliceblue;
+            /* background-color: aliceblue; */
             box-sizing: border-box;
             width: 65%;
             height: 4040px;
@@ -78,10 +78,10 @@
 
         #job {
             font-family: 'Roboto', sans-serif;
+            color: rgb(101, 171, 91);
             margin: 83px;
             font-size: 13px;
             font-weight: bold;
-            color: rgb(169, 169, 248);
         }
 
        
@@ -123,12 +123,23 @@
         
         }
 
-        .hello  {
+        .hello1  {
             font-size: 40px; 
             margin-left: 100px;
-            font-family: 'Black Han Sans', sans-serif;
-            color: rgb(169, 169, 248);
+            font-weight: 100;
+            font-family: 'Noto Sans KR', sans-serif;
+            float: right;
         }
+
+        .hello2 {
+            font-size: 40px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 1000;
+            color: rgb(101, 171, 91);
+            float: right;
+        }
+
+    
 
       
         @keyframes fadeInLeft {
@@ -170,7 +181,7 @@
             height: 10px;
             -webkit-appearance: none;
             margin: 10px 0;
-            width: 40%;
+            width: 90%;
             background: transparent;
         }
 
@@ -179,7 +190,7 @@
         }
 
         input[type="range"]::-webkit-slider-runnable-track {
-            width: 40%;
+            width: 90%;
             height: 100%;
             cursor: pointer;
             border-radius: 5px;
@@ -189,13 +200,47 @@
         input[type="range"]::-webkit-slider-thumb {
             -webkit-appearance: none;
             width: 30px;
-            height: 10px;
+            height: 30px;
             background: #ff494f;
             box-shadow: 1px 1px 7px #d16a6e;
             cursor: pointer;
             box-shadow: -100vw 0 0 100vw #ff96ab;
         }
 
+        #lan {
+            /* border: 1px solid black; */
+            width: 400px;
+            height: 420px;
+            float: left;
+            position: relative;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 1000;
+            color: #ff494f;
+        }
+
+        #tools,#etc {
+            /* border: 1px solid black; */
+            width: 300px;
+            height: 210px;
+            float: left;
+            position: relative;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 1000;
+            color: #ff494f;
+            /* text-align: center; */
+        }
+
+        #div3-4>div>div {
+            border: 1px solid black;
+            width: 300px;
+            height: 100%;
+        }
+
+        .contact-info,.contact-sendmessage {
+            /* border: 1px solid black; */
+            float: left;
+            position: relative;
+        }
         
     </style>
 </head>
@@ -237,17 +282,22 @@
 
             <div id="div3-1">
                 <!-- HOME으로 이동 -->
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <span class="hello fadein">
-                    <span class="hello">안녕하세요. 반갑습니다!</span>
-                    <img src="사본 -컴퓨터와마우스이지미.png" class="container" onclick="move()">
-                        <script>
+                        <span class="hello1">
+                            <img src="다유니강 만드러준 아이콘 소통소통.png" class="fadein" style="float: right; width: 170px; height: 100px;">
+                            <br><br>안녕하세요, 반갑습니다!
+                        </span>
+                        <!-- class="container" onclick="move()" -->
+                        <!-- <script>
                         function move() {
                             document.querySelector(".container").classList.add("go");
                         }
-                        </script>
+                        </script> -->
                         <br><br> 
-                        <span class="hello"> 소통하는 개발자 이아름입니다.</span>
+                        <span class="hello2"> 
+                            소통하는 개발자 이아름 입니다. 
+                        </span>
                 </span>
 
                 
@@ -258,12 +308,11 @@
 
             <div id="div3-2" class="fadein" style="margin: 30px; padding: 10px">
                 <br><br>
-                <span style="color: gray; margin-left: 20px;">
-                    ABOUT ME 
-                    <img src="마우스커서이미지.jpg" style="width: 30px; height: 30px;">
+                <span style="color: gray; margin-left: 10px;">
+                    ABOUT ME
                 </span>
                 <br><br><br>
-                <span style="font-size: larger; font-weight: 1000; text-shadow: 5px 5px 5px gray;">
+                <span style="font-size: larger; font-weight: 1000; color: rgb(101, 171, 91);">
                     "안녕하세요. 느리더라도 열정으로 실력있는 개발자로 성장하고 싶은 이아름입니다."
                 </span> 
                 <br><br><br>
@@ -280,28 +329,49 @@
 
             <div class="fadein" id="div3-3" style="padding: 45px;">
                 <div id="teckskill">
-                    <span style="color: gray; margin-left: 20px;">
+                    <span style="color: gray; margin-left: 0px;">
                         TECK SKILLS
                     </span>
                     <br><br><br>
-                    <span style="font-family: 'Old Standard TT', serif; margin-left: 20px;">
+                    <span style="font-family: 'Old Standard TT', serif; ">
                         WHAT CAN I DO?
                     </span>
                 </div>
+
                 <br><br>
+
                 <div>
-                    JAVA<br>
-                    <input type="range" name="java" min="0" max="100"><br><br>
-                    SPRING<br>
-                    <input type="range" name="spring" min="0" max="100"><br><br>
-                    DATABASE<br>
-                    <input type="range" name="database" min="0" max="100"><br><br>
-                    JAVASCRIPT<br>
-                    <input type="range" name="javascript" min="0" max="100"><br><br>
-                    HTML<br>
-                    <input type="range" name="html" min="0" max="100"><br><br>
-                    CSS<br>
-                    <input type="range" name="css" min="0" max="100">
+                    <div id="lan"> 
+                        JAVA<br>
+                        <input type="range" name="java" min="0" max="100"><br><br>
+                        SPRING<br>
+                        <input type="range" name="spring" min="0" max="100"><br><br>
+                        DATABASE<br>
+                        <input type="range" name="database" min="0" max="100"><br><br>
+                        JAVASCRIPT<br>
+                        <input type="range" name="javascript" min="0" max="100"><br><br>
+                        HTML<br>
+                        <input type="range" name="html" min="0" max="100"><br><br>
+                        CSS<br>
+                        <input type="range" name="css" min="0" max="100">
+                    </div>
+
+                    <div id="tools">
+                        TOOLS
+                        <br><br>
+                        Eclipse <br>
+                        Spring Tool Suite 4 <br>
+                        Visuak Studio Code<br>
+                        sqldeveloper
+                    </div>
+
+                    <div id="etc">
+                        ETC
+                        <br><br>
+                        Git<br>
+                        AWS
+                    </div>
+                   
                 </div>
                 <!-- <img src="backend.png" style="width: 300px; height: 300px;">
                 <img src="version-control.png" style="width: 150px; height: 150px;">
@@ -310,7 +380,7 @@
 
             <div class="fadein" id="div3-4" style="margin: 30px; padding: 10px">
                 <br><br>
-                <div id="project">
+                <div id="blog" style="position: relative;">
                     <span style="color: gray; margin-left: 20px;">
                         PROJECT
                     </span>
@@ -318,6 +388,24 @@
                     <span style="font-family: 'Old Standard TT', serif; margin-left: 20px;">
                         MY WORK
                     </span>
+                </div>
+
+                <div id="velog" style="position: relative; float: left; padding: 30px;">
+                    <img src="한국영화맞추기플젝.png" style="width: 300px; height: 200px ;">
+                    <br><br><span style="color: gray; font-size: 14px; text-align: center;">since 2022.04.07 | 개발 velog 운영</span> 
+                    <br><br> 방대한 양의 교육 내용을 소화하기 위해
+                    <br> 시간이 날때마다 배운 내용을 바탕으로 
+                    <br> 틈틈이 개발 블로그를 작성하고 있습니다.
+                </div>
+                
+                <div id="notion" style="position: relative; float: left; padding: 30px;">
+                    <img src="notion.png" style="width: 300px; height: 200px ;">
+                    <br><br><span style="color: gray; font-size: 14px; text-align: center;">since 2022.04.07 | notion 정리</span> 
+                    
+                    <br><br> 실무에서 필요한 협업 툴인 노션을 
+                    <br> 사용하여 일정을 정리하고 프로젝트를 
+                    <br> 진행할 때 협업을 위한 도구로 사용하고
+                    <br> 있습니다.
                 </div>
 
                 <div></div>
@@ -376,33 +464,37 @@
             <div class="fadein" id="div3-8" style="margin: 0px; padding: 10px;">
                 <br><br>
                 <div class="contact-info" style="float: left; margin-right: 50px;">
-                    <span style="color: gray; margin-left: 20px;">
-                        LETS TALK !
+                    <span style="color: gray; margin-left: 30px;">
+                        LET'S TALK !
                     </span>
-                    <br><br><br>
+                    <br><br>
                 
-                    <span style="font-family: 'Old Standard TT', serif; font-size: 30px; margin-left: 30px;">
+                    <span style="font-family: 'Noto Sans KR', sans-serif; font-size: 30px; margin-left: 30px; color: rgb(101, 171, 91);">
                         CONTACT
                     </span>
-                    <div style="font-family: 'Roboto', sans-serif; font-size: 30px; margin-left: 30px;">
-                        <br><br><br>
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 20px; margin-left: 30px; line-height: 30px; font-weight: 1000;">
+                        <br>
                         lee990103@naver.com
-                        <br><br>
+                        <br>
                         010-1234-1234
-                        <br><br><br><br><br>
+                        <br>
                         <div id="gitlogo">
-                            <a href="https://github.com/noome777" target="_blank"><img src="깃허브로고.png" style="width: 50px; height: 50px;"></a>
+                            <a href="https://github.com/noome777" target="_blank"><img src="다유닝이 준 깃허브로고.png" style="width: 40px; height: 40px;"></a>
+                        </div>
+                        <br>
+                        <div>
+                            <img src="다유닝이 준 말풍선 연한거.png" style="width: 350px; height: 350px; margin-right: 0px;"  >
                         </div>
                     </div>
                 </div>
 
-                <div class="contact-sendmessage" style="float: left; padding-right: 50px; padding-top: 14px;">
+                <div class="contact-sendmessage" style="float: left;  padding-top: 40px; margin-left: 0px;">
                     <form action="message" method="get">
                         <input type="text" name="이름" placeholder="성함"><br><br>
                         <input type="email" name="이메일" placeholder="회신 받으실 이메일"><br><br>
                         <input type="text" name="제목" placeholder="제목"><br><br>
-                        <textarea name="내용"cols="50" rows="20"></textarea><br>
-                        <input type="submit" name="send-message" style="background-color: rgb(169, 169, 248); border: none; width: 50px; height: 50px; float: right;">
+                        <textarea name="내용" placeholder="내용을 입력해주세요." cols="50" rows="20"></textarea><br>
+                        <input type="submit" name="send-message" style="background-color: rgb(101, 171, 91); color: white; border: none; width: 50px; height: 50px; float: right;">
                     </form>
                 </div>
             </div>
